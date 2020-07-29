@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <!-- 4. Дано два числа A и B где (A<B). 
+    Выведите на экран суму всех чисел расположенных в числовом промежутке от А до В. 
+    Выведите на экран все нечетные значения, расположенные в числовом промежутке от А до В.  -->
+    <script>
+        var values = [10, 20];
+        var total = 0; // for store the sum of num
+        var uncountableNum = []; // for store unconuntable num 
+        var j = 0;
+
+        for(var i = values[0]+1; i < values[1]; i++) {
+            total += i;
+            if(i % 2 !== 0) {
+                uncountableNum[j] = i;
+                j++;
+            }
+        }
+        
+        document.write(`The sum of numbers located in a numerical interval: ${total}`);
+        document.write('<br/>');
+        document.write(`The uncountable numbers in numerical interval: ${uncountableNum}`);
+    </script>
+</body>
+</html>

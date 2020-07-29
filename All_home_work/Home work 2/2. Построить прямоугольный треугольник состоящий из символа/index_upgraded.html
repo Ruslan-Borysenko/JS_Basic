@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 2. Построить прямоугольный треугольник состоящий из символа "*". -->
+    <script>
+        for(var l = 0; l < 20; l++) {
+            // empty line
+            for(var s = 0; s <= l; s++) { // cycle for painting
+                if((s == 0) || (s == l)) { // paint '*'
+                    document.write('*');
+                }else { // paint '_'
+                    document.write('_');
+                }
+            }
+        document.write('<br/>');
+        }
+        for(var s = 0; s <= l; s++) { // underline empty bottom by '*'
+            document.write('*');
+        }
+    </script>
+
+</body>
+</html>
